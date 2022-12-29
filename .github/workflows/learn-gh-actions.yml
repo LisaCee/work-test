@@ -1,0 +1,15 @@
+name: lisa-test
+run-name: Lisa Test
+on:
+  push:
+    branches:
+      -main
+    jobs:
+      # job name
+        # runs-on: server (if needed)
+      runs-on: ubuntu-latest
+      steps:
+        -uses: actions/checkout@v3
+        run: echo "hello lisa"
+
+# runs-on: ubuntu-latest
