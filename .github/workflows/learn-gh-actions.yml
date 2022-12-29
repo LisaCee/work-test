@@ -4,11 +4,11 @@ on:
   push:
     branches:
       -main
-    jobs:
-      hello-lisa:
-        runs-on: ubuntu-latest
-        steps:
-          -uses: actions/checkout@v3
-          run: echo "hello lisa"
+  jobs:
+    hello-lisa:
+      runs-on: ubuntu-latest
+      steps:
+        -uses: actions/checkout@v3
+        run: echo "hello lisa"
 
 # runs-on: ubuntu-latest
